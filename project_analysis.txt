@@ -1,0 +1,28 @@
+*VOICE FREQUENCY:
+The voiced speech of a typical adult male will have a fundamental frequency from 85 to 180 Hz, and that of a typical adult female from 165 to 255 Hz. Thus, the fundamental frequency of most speech falls below the bottom of the "voice frequency" band as defined above. However, enough of the harmonic series will be present for the missing fundamental to create the impression of hearing the fundamental tone.
+In telephony, the usable voice frequency band ranges from approximately 300 Hz to 3400 Hz. It is for this reason that the ultra low frequency band of the electromagnetic spectrum between 300 and 3000 Hz is also referred to as voice frequency, being the electromagnetic energy that represents acoustic energy at baseband. The bandwidth allocated for a single voice-frequency transmission channel is usually 4 kHz, including guard bands, allowing a sampling rate of 8 kHz to be used as the basis of the pulse code modulation system used for the digital PSTN. Per the Nyquist–Shannon sampling theorem, the sampling frequency (8 kHz) must be at least twice the highest component of the voice frequency via appropriate filtering prior to sampling at discrete times (4 kHz) for effective reconstruction of the voice signal.
+
+
+*TRAIN HORN FREQUENCY:
+A train horn is a powerful air horn that serves as an audible warning device on electric and Diesel locomotives. The horn's primary purpose is to alert persons and animals to an oncoming train, especially when approaching a grade crossing. The horn is also used for acknowledging signals given by railroad employees, such as during switching operations. A train horn has a frequency which lies in the range of 500-1500 Hz and random train noises from the tracks and coupling also lie below 2000 kHz.
+
+
+*ANALYSIS OF THE SPECTRUM:
+
+Discrete Fourier Transform (DFT) using Fast Fourier Transform (FFT) algorithm
+
+Using audioread function in MATLAB, the audio files were imported into the MATLAB environment. Following, the Fast Fourier Transform technique was applied on each signal and the results were simulated.
+The data obtained was plotted and the frequency spectrums of all the audio signals were analysed for the next step of separation.
+
+*FILTER DESIGN:
+
+Notch filter and elliptic filter design for speech separation
+
+A notch filter is a band-stop filter with a narrow stopband (high Q factor). Narrow notch filters (optical) are used in Raman spectroscopy, live sound reproduction (public address systems, or PA systems) and in instrument amplifiers (especially amplifiers or preamplifiers for acoustic instruments such as acoustic guitar, mandolin, bass instrument amplifier, etc.) to reduce or prevent audio feedback, while having little noticeable effect on the rest of the frequency spectrum (electronic or software filters). Other names include 'band limit filter', 'T-notch filter', 'band-elimination filter', and 'band-reject filter'.
+Typically, the width of the stopband is 1 to 2 decades (that is, the highest frequency attenuated is 10 to 100 times the lowest frequency attenuated). However, in the audio band, a notch filter has high and low frequencies that may be only semitones apart.
+
+An elliptic filter is a signal processing filter with equalized ripple behaviour in both the passband and the stopband. The amount of ripple in each band is independently adjustable, and no other filter of equal order can have a faster transition in gain between the passband and the stopband, for the given values of ripple (whether the ripple is equalized or not). Alternatively, one may give up the ability to adjust independently the passband and stopband ripple, and instead design a filter which is maximally insensitive to component variations.
+As the ripple in the stopband approaches zero, the filter becomes a type I Chebyshev filter. As the ripple in the passband approaches zero, the filter becomes a type II Chebyshev filter and finally, as both ripple values approach zero, the filter becomes a Butterworth filter.
+
+
+
